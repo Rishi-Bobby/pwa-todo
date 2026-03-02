@@ -1,4 +1,4 @@
-const CACHE_NAME = "todo-cache-v1";
+const CACHE_NAME = "todo-cache-v2";
 
 const urlsToCache = [
   "index.html",
@@ -24,4 +24,5 @@ self.addEventListener('sync', event => {
   if (event.tag === 'sync-tasks') {
     console.log("Syncing tasks...");
   }
+
 });
